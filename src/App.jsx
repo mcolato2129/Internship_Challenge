@@ -1,12 +1,9 @@
 import './App.css';
 import React from 'react';
 import { useState, useEffect } from 'react';
-// import axios from 'axios';
 import { fetchProducts, fetchPrices, fetchUsers } from './mock_api'
 // import needed mock API functions
-// console.log(fetchProducts())
-// console.log(fetchPrices())
-// console.log(fetchUsers())
+
 function App() {
   // Using the mock API functions, create a function to be used on the front end that 
   // 1.) fetches users from API
@@ -38,15 +35,7 @@ function App() {
     }));
     setProductsWithPrices(productsWithPrices);
   }, [])
-
-
-
-
-
   // Function to fetch and sort users
-
-
-
   // Using the mock API functions, create a function to be used on the front end that 
   // 1.) fetches products from API
   // 2.) fetches prices from the API
@@ -77,10 +66,5 @@ function App() {
     </div>
   );
 }
-// {users.map((user, index) => (
-//   <div key={index}> 
-//     <h3>{user.userInfo.name}</h3>
-//     <p>Type: {user.userType}</p>
-//   </div>
-// ))}
+
 export default App;
